@@ -35,6 +35,7 @@ fetch("https://movies-app1.p.rapidapi.com/api/movies", options)
 
 function showData(arrTitle) {
   arrTitle.forEach(function (title, index) {
+    // console.log(title.image.url);
     allMovies.style.cssText = `  overflow-x: hidden;`;
     movie.innerHTML += `<div class="warp col-3 justify-content-center align-items-baseline d-flex flex-column ">
 		<img class="w-75" src=${title.image} width:20px;  alt="#">
