@@ -16,13 +16,13 @@ body.append(allMovies);
 movie.classList.add("row"); 
 allMovies.append(movie); 
 
-fetch("https://movies-app1.p.rapidapi.com/api/movies", options)
+fetch("https://movies-app1.p.rapidapi.com/api/movies", options) 
   .then((response) => response.json())
   .then(function (response) {
-    showData(response.results);
+    showData(response.results); 
     input.addEventListener("keyup",function(){
 		movie.innerHTML = "";
-		let inputVal = input.value.trim();
+		let inputVal = input.value.trim(); 
 		let filterIt = response.results.filter(function (movie) {
 		   return movie.titleOriginal.toLowerCase().includes(inputVal.toLowerCase());
 		});
