@@ -8,8 +8,8 @@ const options = {
     "X-RapidAPI-Host": "movies-app1.p.rapidapi.com",
   },
 };
-let input = document.querySelector("input");
-let body = document.body;
+let input = document.querySelector("input"); 
+let body = document.body; 
 let allMovies = document.createElement("div");
 let movie = document.createElement("div");
 body.append(allMovies);
