@@ -38,11 +38,11 @@ function showData(arrTitle) {
   arrTitle.forEach(function (title, index) {
     allMovies.style.cssText = `  overflow-x: hidden;`;
     movie.innerHTML += `<div class="warp col-3 justify-content-center align-items-baseline d-flex flex-column ">
-		<img class="w-75" src=${title.image} width:20px;  alt="#">
-		<p class="text-white">Movie:${title.titleOriginal}</p>
-		<p class="text-white">year:${title.year}</p>
+		<img class="w-75" src=${title.image} width:20px;  alt="#"> 
+		<p class="text-white">Movie:${title.titleOriginal}</p> 
+		<p class="text-white">year:${title.year}</p> 
 		<p class="text-white">rate:${title.rating}</p>
 		<a href="${title.embedUrls[3].url}" target="_blank">${title.titleOriginal}</a>
 		</div>`;
-  });
-}
+  });  
+} 
