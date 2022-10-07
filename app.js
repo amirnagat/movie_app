@@ -5,7 +5,7 @@ const options = {
     "X-RapidAPI-Key": "e65da03b5bmsh17fef234819a948p15c174jsnd0f8c32a3add",
     "X-RapidAPI-Host": "movies-app1.p.rapidapi.com",
   },
-};
+}; 
 let input = document.querySelector("input");
 let body = document.body;
 let allMovies = document.createElement("div");
