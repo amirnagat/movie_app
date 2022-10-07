@@ -10,9 +10,9 @@ let input = document.querySelector("input");
 let body = document.body;
 let allMovies = document.createElement("div");
 let movie = document.createElement("div");
-body.append(allMovies);
-movie.classList.add("row");
-allMovies.append(movie);
+body.append(allMovies); 
+movie.classList.add("row"); 
+allMovies.append(movie); 
 
 fetch("https://movies-app1.p.rapidapi.com/api/movies", options)
   .then((response) => response.json())
