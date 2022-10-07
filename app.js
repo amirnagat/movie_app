@@ -14,6 +14,7 @@ body.append(allMovies);
 movie.classList.add("row"); 
 allMovies.append(movie); 
 
+
 fetch("https://movies-app1.p.rapidapi.com/api/movies", options)
   .then((response) => response.json())
   .then(function (response) {
