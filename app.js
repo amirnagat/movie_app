@@ -24,8 +24,7 @@ fetch("https://movies-app1.p.rapidapi.com/api/movies", options)
 		let inputVal = input.value.trim();   
 		let filterIt = response.results.filter(function (movie) {
 		   return movie.titleOriginal.toLowerCase().includes(inputVal.toLowerCase());
-		});
-		// showData(filterIt);
+		});  
 	  showData(filterIt);
 	});
   });
